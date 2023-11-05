@@ -6,7 +6,7 @@ import SideNav from "./Layout/mainLayout/SideNav";
 import Main from "./Layout/mainLayout/Main";
 
 import { useEffect } from "react";
-import { useApiGet } from "./hooks/useApiGet";
+import useApiGet from "./hooks/useApiGet";
 
 function App() {
   const [opened, { toggle }] = useDisclosure();

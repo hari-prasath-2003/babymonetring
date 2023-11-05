@@ -38,7 +38,7 @@ const SideNav = () => {
           variant="default"
           onClick={() => navigate("/sensor")}
         >
-          Sensor
+          Saved Videos
         </Button>
       </Flex>
     </AppShell.Navbar>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import api from "../services/api";
-export const useApiGet = (url) => {
+const useApiGet = (url) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -21,3 +21,5 @@ export const useApiGet = (url) => {
   }, []);
   return { data, loading, error };
 };
+
+export default useApiGet;

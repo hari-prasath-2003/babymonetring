@@ -3,7 +3,11 @@ export default async function upload(url, body, fileType, assetType) {
     const res = await fetch(url, {
       method: "POST",
       body: body,
-      headers: { fileType: fileType, assetType: assetType },
+      headers: {
+        fileType: fileType,
+        assetType: assetType,
+      },
+      credentials: "include",
     });
 
     if (!res.ok) {

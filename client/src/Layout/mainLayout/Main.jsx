@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
-    <AppShell.Main>
+    <AppShell.Main h={"calc(100vh - 92px)"}>
       <Outlet />
     </AppShell.Main>
   );
